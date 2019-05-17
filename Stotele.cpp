@@ -22,7 +22,7 @@ void Stotele()
     Did(klausimas);
     AtsA(klausimas);
     AtsB(klausimas, n);
-    cout << Va.DMG << endl;
+    AtsC(klausimas);
 }
 void AtsA(string &A)
 {
@@ -32,6 +32,12 @@ void AtsA(string &A)
 void AtsB(string &B, int &n)
 {
     if(n>5) cout << "Neaiskus zmogus nuejo." << endl;
+    if(n==4 && B=="A")
+    {
+        cout << "Praleidote autobusa, prazioplinote sesija.";
+        system("Pause");
+        exit(0);
+    }
     else
     {
         Did(B);
@@ -51,5 +57,8 @@ void AtsB(string &B, int &n)
 }
 void AtsC(string &C)
 {
-
+    Va.mobDMG(Va.hp);
+    cout << "Gavote i galva." << endl;
+    cout << "Jus turite " << Va.hp <<"/" << Va.maxHP << endl;
+    system("pause");
 }

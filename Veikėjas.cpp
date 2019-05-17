@@ -18,10 +18,8 @@ void veikejas()
     Did(rase);
     Did(lytis);
     system("pause");
-    Va.Rase(rase,lytis,Va.maxHP,Va.U);
-    if(klase=="SUKCIUS")Va.sukcius(rase, lytis, Va.maxHP, Va.HP, Va.DMG, Va.P, Va.U, Va.G);
-    if(klase=="VIENUOLIS")Va.Vienuolis(rase, lytis, Va.maxHP, Va.HP, Va.DMG, Va.P, Va.U, Va.G);
-    if(klase=="KARYS")Va.Karys(rase, lytis, Va.maxHP, Va.HP, Va.DMG, Va.P, Va.U, Va.G);
+    Va.Rase(rase, lytis, Va.maxHP, Va.uztarimas, Va.pasala, Va.gasdinimas);
+    Va.Klase(klase, Va.maxHP,Va.hp, Va.DMG, Va.pasala, Va.uztarimas, Va.gasdinimas);
     cout << "Tavo rase:" << rase << endl;
     cout << "Tavo klase:" << klase << endl;
     cout << "Tavo gyvybiu kiekis:" << Va.maxHP << endl;
