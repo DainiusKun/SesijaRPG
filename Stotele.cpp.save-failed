@@ -1,5 +1,6 @@
 #include "Funkcijos.h"
 #include "Klass.h"
+#include <conio.h>
 extern Klass Va;
 void Did(string &VM);
 void AtsA(string &A, int n);
@@ -63,7 +64,7 @@ void AtsC(string &C, int n)
     {
         Va.mobDMG(Va.hp);
         cout << "Gavote i galva." << endl;
-        Va.hpCheck(Va.hp,Va.maxHP);
+        cout << "Jus turite " << Va.hp <<"/" << Va.maxHP << "gyvybes." endl;
     }
     if(n>=4 && C=="C")
     {

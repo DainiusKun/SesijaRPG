@@ -8,4 +8,7 @@ int main()
     Snausti();
     system("cls");
     Stotele();
+    system("cls");
+    Uni();
+    system("pause");
 }

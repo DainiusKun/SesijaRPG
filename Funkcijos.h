@@ -9,10 +9,11 @@
 #include <windows.h>
 #include <random>
 #include <mmsystem.h>
+#include <conio.h>
 using namespace std;
 void intro();
 void veikejas();
 void Snausti();
 void Stotele();
-
+void Uni();
 #endif // FUNKCIJOS_H_INCLUDED

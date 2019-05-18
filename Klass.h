@@ -23,6 +23,7 @@ class Klass
     void Rase(string rase,string lytis,int &maxHP,int &uztarimas, int &pasala, int &gasdinimas);
     void Ran(int veiksmas, int&v);
     void mobDMG(int&v);
+    void hpCheck(int hp, int maxHP);
     virtual ~Klass();
     protected:
 

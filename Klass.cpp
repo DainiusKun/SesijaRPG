@@ -94,3 +94,7 @@ void Klass::mobDMG(int&v)
 {
     v-=Random::get(1, 6);
 }
+void Klass::hpCheck(int hp, int maxHP)
+{
+    cout << "Jus turite " << hp <<"/" << maxHP << " gyvybes."<< endl;
+}
