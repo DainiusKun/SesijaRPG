@@ -22,5 +22,4 @@ void Snausti()
         system("pause");
         exit(0);
     }
-    system("pause");
 }

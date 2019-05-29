@@ -7,7 +7,7 @@ class Klass
     public:
     std::string klase;
     string rase;
-    string lytis;
+    string lytis, vardas;
     int dmg;
     int hp;
     int maxHP = 2;
@@ -24,6 +24,7 @@ class Klass
     void Ran(int veiksmas, int&v);
     void mobDMG(int&v);
     void hpCheck(int hp, int maxHP);
+    void egDMG(int&v);
     virtual ~Klass();
     protected:
 

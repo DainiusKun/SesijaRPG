@@ -42,6 +42,7 @@
 		<Unit filename="Veikėjas.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="random.hpp" />
+		<Unit filename="uni.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

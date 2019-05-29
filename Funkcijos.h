@@ -10,10 +10,13 @@
 #include <random>
 #include <mmsystem.h>
 #include <conio.h>
+#include <vector>
 using namespace std;
 void intro();
 void veikejas();
 void Snausti();
 void Stotele();
 void Uni();
+void game();
+void Egza();
 #endif // FUNKCIJOS_H_INCLUDED

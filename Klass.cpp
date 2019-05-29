@@ -6,10 +6,10 @@ Klass::Klass()
 {
     std::string klase;
     string rase;
-    string lytis;
+    string lytis, vardas;
     int dmg;
     int hp;
-    int maxHP = 2;
+    int maxHP = 10;
     int pasala=0;
     int uztarimas=0;
     int gasdinimas=0;
@@ -25,18 +25,18 @@ void Klass::Rase(string rase,string lytis,int &maxHP,int &uztarimas, int &pasala
 {
     if(rase=="NEUZAUGA")
     {
-        maxHP+=2;
+        maxHP+=4;
         pasala+=2;
     }
     if(rase=="ZMOGEDRA")
     {
-        maxHP+=8;
+        maxHP+=10;
         pasala-=1;
         gasdinimas+=2;
     }
     if(rase=="ZMOGUS")
     {
-        maxHP+=5;
+        maxHP+=7;
         uztarimas+=1;
     }
     if(lytis=="VYRAS")
@@ -83,8 +83,8 @@ void Klass::Ran(int veiksmas, int&v)
 }
 void Klass::Zala(int DMG, int P, int&dmg, string klase)
 {
-    if(P>=15 && klase=="sukcius") S(dmg);
     dmg=DMG+Random::get(1, 8);
+    if(P>=15 && klase=="sukcius") S(dmg);
 }
 void Klass::S(int&v)
 {
@@ -93,6 +93,13 @@ void Klass::S(int&v)
 void Klass::mobDMG(int&v)
 {
     v-=Random::get(1, 6);
+}
+void Klass::egDMG(int&v)
+{
+    int z;
+    z=Random::get(-5, 3);
+    v-=z;
+    if(z<0) cout << "Ismokote kazka naujo egzamino metu" << endl;
 }
 void Klass::hpCheck(int hp, int maxHP)
 {
