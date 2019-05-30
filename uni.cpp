@@ -79,8 +79,8 @@ void durys()
         system("cls");
         if(V=="Z")
         {
-            if(Va.lytis=="VYRAS") cout << "Saunuolis, metas eiti i egzamina.";
-            if(Va.lytis=="MOTERIS") cout << "Saunuole, metas eiti i egzamina.";
+            if(Va.lytis=="VYRAS") cout << "Saunuolis, metas eiti i egzamina." << endl;
+            if(Va.lytis=="MOTERIS") cout << "Saunuole, metas eiti i egzamina." << endl;
             system("pause");
         }
         if(V=="X")

@@ -33,7 +33,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Egza.cpp" />
 		<Unit filename="Funkcijos.h" />
+		<Unit filename="Game.cpp" />
 		<Unit filename="Intro.cpp" />
 		<Unit filename="Klass.cpp" />
 		<Unit filename="Klass.h" />

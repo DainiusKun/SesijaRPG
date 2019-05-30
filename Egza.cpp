@@ -55,7 +55,6 @@ void Kova()
         }
         kbhit();
         v = getch();
-        cout << v << endl;
         while (!(v>=49 && v<=49+n))
         {
             cout << "Tokio uzdavinio nera, rinkites kita." << endl;
